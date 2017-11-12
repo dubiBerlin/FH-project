@@ -1,0 +1,251 @@
+body{
+	font-family:"Trebuchet MS",verdana;
+	position: absolute;
+}
+
+textarea.farbig {
+  border:4px dotted #c30c40;       /* Rahmen um die Box - Dicke, Stil und Farbe veränderbar*/
+  width:95%;                       /* Breite in % */
+  height:10em;                     /* Höhe relativ zur Schriftgröße */
+  color:#244B74;                   /* Schriftfarbe */
+  font-family: Arial,sans-serif;   /* Schriftart */
+  padding:8px;                     /* Textabstand zum Rand - Opera ignoriert den */
+  font-weight: bold;               /* Schriftgewicht - fetter Text */
+  background:#ffffff url(http://domain.de/ordner/datei.jpg);/* Hintergrund */
+  margin-left:300px;               /* Abstand zum Fensterrand */
+}
+
+.iframe{
+	width:0;
+	height:0;
+	border:0px solid #fff;
+	display:none;
+}
+
+/* savePos nimmt alles in sich auf was scrollBuilders zurückgibt */
+#savePos{
+	width: 1500px;
+	margin-left:0px;
+}
+#scrollVerbund{
+	float:left;
+	/*width: 1030px;*/
+	/*height: 1200px;*/
+}
+/* befindet sich innerhalb des scrollverbunds und zeigt über den ganzen scrolldivs den Titel an */
+#titleStory1{
+	background-color:#c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    padding-left: 10px;
+    padding-right: 10px;
+	float:left;
+}
+/* Tabelle für die Anzeige der Positionen */
+.posTable{
+	background-color: #FFE1FF;
+	padding: 3px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+}
+.posTabTit{
+	background-color: #c6e2ff;
+
+	padding-left: 5px;
+	padding-right: 5px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+}
+
+
+#scroll1{
+	border:thin solid #696969;
+	float:left;
+	height:250px;
+	width:500px;
+	overflow:scroll;
+	-moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+#scroll2{
+	border:thin solid #696969;
+	height:250px;
+	width:500px;
+	overflow:scroll;
+	-moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    float:left;
+}
+
+#div_savePosForm{
+	/*background-color: #D3D3D3;*/
+	background-color:#c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    padding-left: 10px;
+}
+#show_pos1{
+	margin-right: 20px;
+}
+#show_pos2{
+	margin-right: 20px;
+}
+#saveButton{
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    height: 27px;
+    font-size:0.9em;	
+    font-weight:400;
+    border:thin solid #444444;
+}
+
+#saveButton:active{
+    border:medium solid #696969;
+}
+
+.linkStyle{
+	text-decoration: none;
+	color: #000000;
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    padding: 7px;
+}
+.linkStyle:hover{
+	/*color: #555555;*/
+	padding: 11px;
+	text-decoration: underline;
+}
+
+#scroll11{
+	border:thin solid #696969;
+	height:250px;
+	width:500px;
+	overflow:scroll;
+	-moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+}
+
+#scroll21{
+	border:thin solid #696969;
+	height:250px;
+	width:500px;
+	overflow:scroll;
+	-moz-border-radius:3px;
+    -khtml-border-radius:3px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-right: 10px;
+    margin-top: 15px;
+}
+
+#showPos1{
+	padding-left: 10px;
+	margin-right: 20px;
+}
+#showPos2{
+	padding-left: 10px;
+}
+#div_showPos{
+	background-color:#c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    padding-left: 10px;
+}
+
+.navi_button{
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    border:thin solid #696969;
+    height: 27px;
+    width: 100px;
+    font-size:0.9em;	
+    font-weight:400;
+    
+}
+
+.navi_button:active{
+    border:medium solid #696969;
+}
+
+#posMenu{
+}
+#tablePos{
+	/*background-color:#D3D3D3;*/
+	border:thin solid #696969; 
+	border-spacing:10px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+}
+
+.delPosButton {
+	background-image:url('delButton1.png');
+	width  :30px;
+	height :30px;
+	float:right;
+}
+
+.error{
+	color: red;
+	font-weight:900;
+}
+
+.success{
+	color: blue;
+	font-weight:900;
+}
+
+/*#uploadprogress{
+	height: 90px;
+}*/
+
+#uploadID{
+	display: none;
+	font-weight:500;
+	border:thin solid #696969; 
+	float:left;
+	font-family:"Trebuchet MS",verdana;
+	-moz-border-radius:7px;
+    -khtml-border-radius:7px;
+    width:400px;
+    height:150px;
+/*	margin-top: 30px; 
+	margin-left: 50px;*/
+	padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+}
+
+#menuSelect{
+	width: 200px;
+	/*height: 100px;
+	margin-top: 220px; 
+	margin-left: 50px;
+	padding-left: 20px;*/
+}
+
+/* prepareStory */
+.errorMessage{
+	background-color : #FFE1FF;
+	font-weight  : bolder;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+	border:thin solid #FA58F4;
+	color        : #FA58F4; 
+	padding      : 5px;
+}
+
+.label1{
+	width: 50px;
+} 

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Test-Upload</title>
+	<link rel="stylesheet" type="text/css" href="CSS/test.css">
+	<script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="scripts/fileUpload.js"></script>
+	<script type="text/javascript" src="scripts/buildDropDownMenu.js"></script>
+	
+	
+</head>
+<body>
+	<table border="0">
+		<colgroup width="450" ></colgroup>
+		<tr height="50px">
+			<td>
+				<a href="vokabeltraining.php" class="linkStyle" >Vokabeltraining</a><br/>
+			</td>
+			<td>
+				<a href="eintrag.html" class="linkStyle" >Einträge</a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="menuSelect"></div>
+			</td>
+			<td>
+				<div id="uploadOrNot"><button id="upOrNot" class="navi_button">File Upload</button></div>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<div id="uploadID" class="aha">
+					<table>
+						<tr>
+							<td>
+								<div id="uploadform">
+									<form enctype="multipart/form-data" action="fileUpload.php" id="form" method="POST">
+										<label for="uploadedfile">Titel</label><input type="text" name="title" /><br/>
+										<input type="hidden" name="MAX_FILE_SIZE" value="100000" />
+										<label for="uploadedfile">Text 1</label><input name="uploadedfile[]" type="file" /><br />
+										<label for="uploadedfile">Text 2</label><input name="uploadedfile[]" type="file" /><br />
+										<input type="submit" id="uploadButton"  class="navi_button" value="Upload File" />
+									</form>
+								</div>
+							</td>
+						</tr>
+					</table>
+					<div id="uploadprogress">
+						Uploading...
+						<img src="images/loader.gif"/>
+					</div>
+					
+					<!-- hier setzt fileUpload.js die Meldung ob der File-Upload geklappt hat oder nicht.  -->
+					<div id="message" ></div>
+				</div>
+			</td>
+		</tr>
+	</table>
+	
+	<div id="savePos"></div>
+	
+	<br/>
+	<br/><!-- DropDown Menu zur Auswahl der Stories -->
+	<!-- DropDown Menu zur Auswahl der Stories -->
+	
+	
+	
+
+	
+</body>
+</html>

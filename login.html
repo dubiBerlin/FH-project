@@ -1,0 +1,195 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Test-Upload</title>
+	<link rel="stylesheet" type="text/css" href="CSS/login.css">
+	<script type="text/javascript" src="scripts/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="scripts/login.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			
+			var jahr = 0;
+			var aktuellesJahr = 1980;
+			var count = 0;
+			
+			while(count <= 20){
+				jahr = aktuellesJahr + count;
+				$("#birthyear").append("<option>"+jahr+"</option>");//.val().html(aktuellesJahr+count);
+				count++;
+			}
+			
+			count = 1;
+			
+			while(count <= 31){
+				
+				$("#birthday").append("<option>"+count+"</option>");//.val().html(aktuellesJahr+count);
+				count++;
+			}
+			
+		});
+	</script>
+</head>
+<body>
+	
+	<div id="login_header" align="center">
+		<h1>Learn a language</h1>
+		
+		
+	</div>
+	
+	<table border="0">
+		<tr>
+			<form method="post" action="login.php" id="login_form">
+			<table border="0" id="loginTable">
+				<tr>
+					<td>
+						<label>Username</label>	
+					</td>
+					<td>
+						<input type="text" id="username" name="username"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label>password</label>
+					</td>
+					<td>
+						<input type="password" id="password" name="password"/>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<button id="loginButton">Login</button>
+					</td>
+				</tr>
+			</table>
+		</form>	
+		</tr>
+		<tr>
+			<td>
+				<div id="showRegFormButton" align="center">Register</div>
+				<!-- <button id="showRegFormButton">Register</button> -->
+			</td>
+		</tr>
+		<tr>
+			<div id="registrationDiv">
+				<form method="post" action="registration.php" id="registration_form">
+					<table border="0" id="registration_table">
+						<tr>
+							<td>
+								<label>Gender</label>	
+							</td>
+							<td>
+								<select id="regGender" name="regGender">
+								  <option value="m">m</option>
+								  <option value="w">w</option>
+								</select>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<label>Firstname</label>	
+							</td>
+							<td>
+								<input type="text"  id="regUserFirstname" name="regUserFirstname" maxlength="30"/>
+							</td>
+							<td id="regUserFirstnameError"></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Lastname</label>	
+							</td>
+							<td>
+								<input type="text" id="regUserLastname" name="regUserLastname" maxlength="30"/>
+							</td>
+							<td id="regUserLastnameError"></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Email</label>	
+							</td>
+							<td>
+								<input type="text" name="userEmail" id="userEmail" maxlength="30"/>
+							</td>
+							<td id="userEmailError"></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Username</label>	
+							</td>
+							<td>
+								<input type="text" name="regUsername" id="regUsername" maxlength="30"/>
+							</td>
+							<td id="regUsernameError"></td>
+						</tr>
+						<tr>
+							<td>
+								<label>Birthdate</label>
+							</td>
+							<td>
+								<table>
+									<tr>
+										<td>
+											<select id="birthday" name="birthday" >Select day</option>
+											</select>			
+										</td>
+										<td>
+											<select id="birthmonth" name="birthmonth" >Select Month</option>
+												<option value='01'>January</option>
+												<option value='02'>February</option>
+												<option value='03'>March</option>
+												<option value='04'>April</option>
+												<option value='05'>May</option>
+												<option value='06'>June</option>
+												<option value='07'>July</option>
+												<option value='08'>August</option>
+												<option value='09'>September</option>
+												<option value='10'>October</option>
+												<option value='11'>November</option>
+												<option value='12'>December</option>
+											</select>			
+										</td>
+										<td>
+											<select id="birthyear" name="birthyear" >Select Year</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+							</td>
+						<tr>
+							<td>
+								<label>password</label>
+							</td>
+							<td>
+								<input type="password" name="regPassword" id="regPassword" maxlength="32" />
+							</td>
+							<td id="regPasswordError"></td>
+						</tr>
+						<tr>
+							<td>
+								<label>password (retype)</label>
+							</td>
+							<td>
+								<input type="password" name="retypeRegPassword" maxlength="32" id="retypeRegPassword"/>
+							</td>
+							<td id="retypeRegPasswordError"></td>
+						</tr>
+						<tr>
+							<td>
+								<button id="signUpButton">Sign Up</button>
+								<!-- <input type="submit" value=" Absenden "> -->
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</tr>
+		<tr>
+			<td>
+				<div id="responseMessage"></div>
+			</td>
+		</tr>
+	</table>
+</body>
+</html>

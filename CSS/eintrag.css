@@ -1,0 +1,81 @@
+body{
+	font-family:"Trebuchet MS",verdana;
+}
+
+#eintrag{
+	margin-top: 25px;
+    margin-left: 45px; 
+}
+
+#text{
+	margin-top: 40px;
+	margin-left: 45px; 
+	width: 500px;
+    height: 80px;
+  background-color: #c6e2ff;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+#user_eingabe {
+    width: 600px;
+    height: 120px;
+    border: 3px solid #cccccc;
+    padding: 5px;
+    font-family: Tahoma, sans-serif;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    -moz-border-radius:20px;
+    -khtml-border-radius:20px;
+}
+
+#zeig_eintrag{
+	margin-top: 10px;
+    margin-left: 45px; 
+    width:90%;
+    /*background-color: white;*/
+   background-color: #c6e2ff;
+    /*color: #244B74;*/
+    font-size:17px;
+    padding: 10px;  border-width: 0.5px;
+    border-style: solid;
+   /* border:2px solid #000000;*/
+    -moz-border-radius:10px;
+    -khtml-border-radius:10px;
+}
+.navi_button{
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    border:thin solid #696969;
+    height: 27px;
+    width: 100px;
+    font-size:0.9em;	
+    font-weight:400;
+    
+}
+
+.navi_button:active{
+    border:medium solid #696969;
+}
+
+#date_time{
+	width: 400px;
+	background-color: #C9C9C9;
+	font-size: 16px;
+	-moz-border-radius:7px;
+    -khtml-border-radius:7px;
+    padding-left: 15px;
+    color: #FFFFFF;
+}
+
+/*#after{
+	width: 600px;
+    height: 10px;
+    background-color:#cccccc;
+    margin-left: 45px;
+}*/

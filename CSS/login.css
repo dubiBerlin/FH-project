@@ -1,0 +1,76 @@
+body{
+	font-family:"Trebuchet MS",verdana;
+	/*position: absolute;*/
+	 
+}
+
+#registrationDiv{
+	display: none;
+}
+
+#login_header{
+	/*width: 700px;*/
+	width: 90%;
+	height: 80px;
+	background-color: #c6e2ff;
+	/*background-color: #C2C2C2;*/
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: white;
+}
+
+#loginTable{
+	background-color: #c6e2ff;
+	/*background-color: #C2C2C2;*/
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    padding: 10px;
+    margin-bottom: 30px;   
+}
+
+#registration_table{
+	background-color: #c6e2ff;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    padding: 10px;
+    margin-bottom: 30px;   
+}
+
+#showRegFormButton{
+	/*background-color: #C2C2C2;*/
+	background-color: #c6e2ff;
+	width: 80px;
+	padding: 7px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    margin-bottom: 15px; 
+    font-size: 16px;
+}
+
+#showRegFormButton:hover{
+	background-color: #CfCfC1;
+	width: 80px;
+	padding: 7px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    margin-bottom: 15px; 
+    /*color: #009F00;  */
+    
+}
+
+#showRegFormButton:active{
+	background-color: #CfCfC1;
+	width: 80px;
+	padding: 6px;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    margin-bottom: 15px; 
+   /*color: #c6e2ff;*/
+   font-size: 15px;
+   color: #FFFFFF;
+}

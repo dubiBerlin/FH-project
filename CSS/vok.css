@@ -1,0 +1,156 @@
+body{
+	font-family:"Trebuchet MS",verdana;
+}
+
+#first-wrap{
+/*	width:900px;*/
+	height:80px;
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+.navi_button{
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    border:thin solid #696969;
+    height: 27px;
+    width: 140px;
+    font-size:0.9em;	
+    font-weight:400;
+    
+}
+
+.navi_button:active{
+    border:medium solid #696969;
+}
+
+#a1{
+	float:left;
+	margin-top: 20px;
+    margin-left: 70px;
+}
+
+#a2{
+	float:left;
+	margin-top: 20px;
+    margin-left: 20px;
+}
+
+#a3{
+	float:left;
+	margin-top: 20px;
+    margin-left: 20px;
+}
+#a4{
+	float:left;
+	margin-top: 20px;
+    margin-left: 20px;
+    /*margin-right: 70px;*/
+   padding-right: 70px;
+}
+#second-wrap{
+	position:absolute;
+	width:1200px;
+	/*height:1000px;*/
+	/*background-color: #00AAFF;*/
+	border-color:#696969;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+   /* margin-top: 25px;*/
+    margin-left: 25px;
+}
+
+#neueSprache{
+	display:none;
+	position:absolute;
+	width:700px;
+	/*height:100px;*/
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    margin-top: 5px;
+    /*margin-left: 25px;*/
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#neuesWort{
+	display:none;
+	position:absolute;
+	width:700px;
+	/*height:130px;*/
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    margin-top: 80px;
+    /*margin-left: 25px;*/
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#vokTest{
+	display:none;
+	position:absolute;
+	width:700px;
+	/*height:170px;*/
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    margin-top: 230px;
+    margin-bottom: 100px; 
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+#editVok{
+	display:none;
+	position:absolute;
+	width:700px;
+	background-color: #c6e2ff;
+	-moz-border-radius:10px;
+    -khtml-border-radius:10px;
+    margin-top: 410px;
+    /*margin-left: 25px;*/
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#vT_div{
+	/*width: 300px;*/
+	height: 33px;
+}
+
+#vT_select{
+	height: 30px;
+}
+
+#select1{
+	
+}
+
+#select2{
+	
+}
+
+.success{
+	color: blue;
+	font-weight:900;
+}
+
+.flop{
+	color: #FF0000;
+	font-weight : bolder;
+	background-color : yellow;
+}
+
+/* hier wird gemeldet ob die neue Vokabel + Übersetzung gespeichert wurde oder nicht */
+#savedOrNOt{
+	height: 20px;
+}

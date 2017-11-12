@@ -1,0 +1,66 @@
+body{
+	font-family:"Trebuchet MS",verdana;
+	/*position: absolute;*/
+	 font-size: 17px;
+}
+
+#abstand1DivURS{
+	height: 40px;
+}
+
+#abstand2DivURS{
+	height: 40px;
+}
+
+#idStory1{
+	visibility: hidden;
+}
+
+#header{
+	font-size: 20px;
+	width: 700px;
+	/*height: 70px;*/
+	background-color: #C2C2C2;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#header:hover{
+	width: 700px;
+	/*height: 70px;*/
+	background-color: #CfCfC1;
+	-moz-border-radius:5px;
+    -khtml-border-radius:5px;
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#table1{
+	/*width: 100%;*/
+}
+
+a:link { 
+	/*font-family:Arial,Helvetica,sans-serif; */
+	text-decoration: none; 
+	color: #009F00; } a:visited { color: #009F00; 
+} 
+
+a:focus { 
+	color: #FFBF00; 
+} 
+
+a:hover { 
+	color: #FFBF00; 
+} 
+
+a:active { 
+	color: #FF0000; 
+}
+
+#headerDivs{
+	padding-left: 20px;
+}
